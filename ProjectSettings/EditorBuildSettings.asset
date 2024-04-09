@@ -8,9 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/superpassthrough.unity
     guid: 48672423f57e4064f8461c571b5bc83b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/custom_passthrough.unity
     guid: 2f04ff27b8c42d045aded12db5a229eb
+  - enabled: 0
+    path: Assets/Scenes/Test.unity
+    guid: 2631c9f39ffbc0a408ae63b1a5387a86
+  - enabled: 1
+    path: Assets/Scenes/VR_Room.unity
+    guid: 2367929ba6a0cf94ea272a43d13d320d
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 012f7b573c94abf4b90aab9a865baf2c, type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 5e8dcbde4574724498d4e749a3ef341f, type: 2}
