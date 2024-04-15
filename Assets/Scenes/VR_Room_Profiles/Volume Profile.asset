@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-3901828245502643791
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 556797029e73b2347956b6579e77e05b, type: 3}
+  m_Name: DepthOfField
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  focusDistance:
+    overrideState: 0
+    value: 10
+  aperture:
+    overrideState: 0
+    value: 5.6
+  focalLength:
+    overrideState: 0
+    value: 50
+  kernelSize:
+    overrideState: 0
+    value: 1
 --- !u!114 &-1111605784354990724
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -21,7 +49,7 @@ MonoBehaviour:
     value: {fileID: 0}
     defaultState: 1
   intensity:
-    overrideState: 0
+    overrideState: 1
     value: 0
   fastMode:
     overrideState: 0
@@ -44,6 +72,7 @@ MonoBehaviour:
   - {fileID: 2131088257083151978}
   - {fileID: 3074002385087297346}
   - {fileID: -1111605784354990724}
+  - {fileID: -3901828245502643791}
 --- !u!114 &835273395220202053
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -187,7 +216,7 @@ MonoBehaviour:
     value: 1
   shutterAngle:
     overrideState: 1
-    value: 332.5
+    value: 293
   sampleCount:
     overrideState: 1
-    value: 32
+    value: 18
