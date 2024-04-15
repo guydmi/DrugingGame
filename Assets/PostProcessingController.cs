@@ -64,8 +64,9 @@ public class PostProcessingController : MonoBehaviour
         {
             Debug.Log(b_intensity.ToString());
             _b.active = true;
-            _b.intensity.value = b_intensity * 100.0f;
-            _b.threshold.value = 1.0f/b_intensity;
+            _b.intensity.value = b_intensity * 5f;
+            //_b.threshold.value = 0.1f/b_intensity;
+            _b.threshold.value = 0.2f;
         }
         else
         {
@@ -80,7 +81,7 @@ public class PostProcessingController : MonoBehaviour
         {
             _t.active = true;
             _t.aperture.value = t_intensity*32.0f;
-            _t.focusDistance.value = 20.0f * t_intensity;
+            _t.focusDistance.value = 50.0f * t_intensity;
             _t.focalLength.value = t_intensity * 75.0f;
         }
         else
