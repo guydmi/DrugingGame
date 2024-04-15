@@ -27,11 +27,18 @@ public class TargetSpawner : MonoBehaviour
 
     public static Vector3 FindRandomLocation()
     {
-
         var randomPoint = new Vector3();
         randomPoint.x = Random.Range(0.0f, 2.0f);
         randomPoint.y = 1;
         randomPoint.z = Random.Range(0.0f, 2.0f);
+        Quaternion CubeRotation = Quaternion.Euler(0,0,0);
+        Vector3 CubeSize = new Vector3(0.05f, 0.05f, 0.05f);
+        while (Physics.CheckBox(randomPoint,CubeSize, CubeRotation))
+        {
+            randomPoint.x = Random.Range(0.0f, 2.0f);
+            randomPoint.y = 1;
+            randomPoint.z = Random.Range(0.0f, 2.0f);
+        }
 
         return randomPoint;
     }
