@@ -52,7 +52,7 @@ public class PostProcessingController : MonoBehaviour
         if (_BottleChroma != PlayerInfo.Instance.BottleChroma)
         {
             _BottleChroma = PlayerInfo.Instance.BottleChroma;
-            float c_intensity = _BottleChroma / _BottleMax;
+            float c_intensity = 25f * _BottleChroma / _BottleMax;
             ChromaSetOnVar(c_intensity);
         }
     }
