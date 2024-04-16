@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class IncrementValueMenu : MonoBehaviour
 {
+    public bool isAlcool;
+    public bool isWeed;
+    public bool isLSD;
+    public bool isWater;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +22,22 @@ public class IncrementValueMenu : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        PlayerInfo.Instance.BottleBloom += 1;
+        if (isAlcool)
+        {
+            PlayerInfo.Instance.BottleBloom += 1;        }
+        if (isWeed)
+        {
+            PlayerInfo.Instance.BottleTrouble += 1;
+        }
+        if (isLSD)
+        {
+            PlayerInfo.Instance.BottleChroma += 1;
+        }
+        if (isWater)
+        {
+            PlayerInfo.Instance.BottleBloom = 0;
+            PlayerInfo.Instance.BottleTrouble = 0;
+            PlayerInfo.Instance.BottleChroma = 0;
+        }
     }
 }
